@@ -21,20 +21,18 @@ const Hero = () => {
 
       {/* Text Content */}
       <div className="hero-content container" style={{ padding: "0 20px" }}>
-        <h1>
-          Find Your <em>Pilates</em>
-        </h1>
+        <h1>EMPOWER HER CORE</h1>
         <p>
-          Rooted in the transformative power of mindful movement, our Lagree
-          studio is more than a place to work out — it's a sanctuary for the
-          mind, body, and soul. Designed to help you reconnect and recharge, we
-          offer high-intensity, low-impact workouts that sculpt, strengthen, and
-          sustain your well-being. Every class is an invitation to slow down,
-          tune in, and find your solace through intentional movement and
-          recovery.
+          Rooted in the science and soul of intentional movement, Pilates for
+          She™ is more than a studio – it’s a sanctuary for the everyday Indian
+          woman. Designed to help her reconnect with her body and reclaim her
+          strength, we offer mindful mat and reformer Pilates experiences that
+          empower her from within. Every class is an invitation for her to slow
+          down, tune in and come home to her body – through movement that heals
+          and strength that lasts.
         </p>
         <Link to="/login" className="cta-button">
-          JOIN NOW
+          Join the Circle
         </Link>
       </div>
     </section>

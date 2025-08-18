@@ -2,8 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 // Import your logo image (update the path if your assets folder is located differently)
-// import logo5 from "../assets/logo5.PNG";
-import logo from "../assets/Pilates-For-She-Logo-Final.svg";
+import logo5 from "../assets/logo5.PNG";
 
 const Header = () => {
   const [showOthers, setShowOthers] = useState(false);
@@ -41,25 +40,6 @@ const Header = () => {
   return (
     <header className="site-header">
       <div className="header-inner">
-        {/* Logo */}
-        <div className="brand">
-          <Link to="/" onClick={closeMenus}>
-            <img
-              src={logo}
-              alt="Pilates for She Logo"
-              style={{
-                display: "block",
-                maxWidth: "200px", // make it a bit bigger
-                height: "auto",
-                margin: "0 auto",
-                padding: "10px",
-                objectFit: "contain",
-                backgroundColor: "white",
-              }}
-            />
-          </Link>
-        </div>
-
         {/* Hamburger Menu Button */}
         <button
           className="hamburger"
@@ -68,74 +48,95 @@ const Header = () => {
           ☰
         </button>
 
-        {/* Navigation */}
-        <nav className={`main-nav ${mobileMenuOpen ? "open" : ""}`}>
-          <ul className="nav-list">
-            <li>
-              <Link to="/" onClick={closeMenus}>
-                HOME
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" onClick={closeMenus}>
-                SERVICES
-              </Link>
-            </li>
-            <li>
-              <Link to="/schedule" onClick={closeMenus}>
-                SCHEDULE
-              </Link>
-            </li>
-            <li className="others-menu" ref={dropdownRef}>
-              <button
-                type="button"
-                onClick={() => setShowOthers(!showOthers)}
-                className="others-toggle"
-              >
-                OTHERS ▾
-              </button>
-              {showOthers && (
-                <ul className="others-dropdown">
-                  <li>
-                    <Link to="/pricing" onClick={closeMenus}>
-                      PRICING
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/our-story" onClick={closeMenus}>
-                      OUR STORY
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/club-solace" onClick={closeMenus}>
-                      CLUB SOLACE
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/get-in-touch" onClick={closeMenus}>
-                      GET IN TOUCH
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/events" onClick={closeMenus}>
-                      EVENTS
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/standards" onClick={closeMenus}>
-                      STANDARDS
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/purchase-agreement" onClick={closeMenus}>
-                      PURCHASE AGREEMENT
-                    </Link>
-                  </li>
-                </ul>
-              )}
-            </li>
-          </ul>
-        </nav>
+        <div className="flex-container">
+          {/* Navigation */}
+          <nav className={`main-nav ${mobileMenuOpen ? "open" : ""}`}>
+            <ul className="nav-list">
+              <li>
+                <Link to="/" onClick={closeMenus}>
+                  OUR TEAM
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" onClick={closeMenus}>
+                  SERVICES
+                </Link>
+              </li>
+              <li>
+                <Link to="/schedule" onClick={closeMenus}>
+                  PRICING
+                </Link>
+              </li>
+              <li className="others-menu" ref={dropdownRef}>
+                <button
+                  type="button"
+                  onClick={() => setShowOthers(!showOthers)}
+                  className="others-toggle"
+                >
+                  OTHERS ▾
+                </button>
+                {showOthers && (
+                  <ul className="others-dropdown">
+                    <li>
+                      <Link to="/pricing" onClick={closeMenus}>
+                        Wellness Events
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/our-story" onClick={closeMenus}>
+                        FAQs
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/club-solace" onClick={closeMenus}>
+                        CLUB SOLACE
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/get-in-touch" onClick={closeMenus}>
+                        GET IN TOUCH
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/events" onClick={closeMenus}>
+                        EVENTS
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/standards" onClick={closeMenus}>
+                        STANDARDS
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/purchase-agreement" onClick={closeMenus}>
+                        PURCHASE AGREEMENT
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+            </ul>
+          </nav>
+
+          {/* Logo */}
+          <div className="brand">
+            <Link to="/" onClick={closeMenus}>
+              <img
+                src={logo5}
+                alt="Pilates for She Logo"
+                style={{
+                  display: "block",
+                  maxWidth: "130px",
+                  height: "auto",
+                  margin: "0 auto",
+                  padding: "10px",
+                  objectFit: "contain",
+                  // backgroundColor: "#fff",
+                }}
+              />
+            </Link>
+          </div>
+        </div>
 
         {/* Login */}
         <div className="login-btn-container">

@@ -44,19 +44,27 @@ const WellnessSection = () => {
         <div style={styles.container}>
           <div className="section-content" style={styles.sectionContent}>
             <div className="text-content">
-              <h2>
-                Redefining <em>Wellness</em>
-              </h2>
+              <h2>The SheForm™ Method</h2>
               <p>
-                Join us at <em>Pilates for She</em> and discover the power of
-                intentional movement. Your transformation starts here
+                Our signature approach to empowered movement<br></br>
+                SheForm is our proprietary Pilates method – designed
+                specifically for the everyday Indian woman. Blending the science
+                of functional movement with the soul of intentional practice,
+                it’s more than a workout. It’s a journey inward. A path to
+                strength, healing and self-discovery. Each level reflects a
+                stage in her transformation, meeting her exactly where she is:{" "}
+                <br></br>
+                SheStart 1.0 - Foundation <br></br>
+                SheBuild 1.5 - Progression <br></br>
+                SheRise 2.0 - Intermediate <br></br>
+                ShePower 2.5 - Advanced<br></br>
               </p>
               <a
                 href="/register"
                 className="cta-button"
                 style={{ color: "white", background: "gray" }}
               >
-                Join the Community
+                Explore Our Offerings
               </a>
             </div>
             <div className="image-content">

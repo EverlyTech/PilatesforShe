@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #fff;
+  background-color: #fcf9ee;
 }
 
 .App {
@@ -32,6 +32,7 @@ main {
 h1,
 h2,
 h3 {
+  font-family: "Playfair Display Bold", serif;
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 1.2;
@@ -56,11 +57,12 @@ p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
   font-size: 1rem;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 /* Header Styles */
 .site-header {
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
   padding: 1rem 0;
   position: sticky;
@@ -68,17 +70,23 @@ p {
   z-index: 100;
 }
 
-.header-container {
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15rem;
+}
+
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.brand h1 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin: 0;
+.brand {
+  /* No position absolute here */
+  flex-grow: 1;
+  text-align: center;
 }
 
 .brand a {
@@ -142,7 +150,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* darken for readability */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -157,7 +165,8 @@ p {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 500;
-  color: rgb(240, 239, 239); /* your original text color */
+  color: #fcf9ee;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .hero-content p {
@@ -165,7 +174,8 @@ p {
   margin-bottom: 2.5rem;
   line-height: 1.8;
   opacity: 0.9;
-  color: rgb(246, 241, 240); /* your original text color */
+  color: #fcf9ee;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 /* CTA Button */
@@ -218,11 +228,11 @@ p {
 .wellness-section,
 .commitment-section {
   padding: 6rem 0;
-  background-color: #f8f8f8;
+  background-color: #fcf9ee;
 }
 
 .wellness-section {
-  background-color: #fff;
+  background-color: #fcf9ee;
 }
 
 .section-content {
@@ -264,7 +274,7 @@ p {
 
 /* Page Hero Styles */
 .page-hero {
-  background-color: #f8f8f8;
+  background-color: #fcf9ee;
   padding: 4rem 0;
   text-align: center;
 }
@@ -286,7 +296,7 @@ p {
 /* Services Page Styles */
 .services-intro {
   padding: 4rem 0;
-  background: #f8f8f8;
+  background: #fcf9ee;
 }
 
 .services-content {
@@ -334,7 +344,7 @@ p {
 }
 
 .membership-card.featured {
-  border: 2px solid #d4b5a0;
+  border: 2px solid #08541d;
 }
 
 .membership-card h3 {
@@ -372,12 +382,12 @@ p {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
-  background: #f8f8f8;
+  background: #fcf9ee;
   border-radius: 8px;
 }
 
 .recovery-services {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -432,8 +442,8 @@ p {
   padding: 1rem;
   border-radius: 10px;
   display: inline-block;
-  max-width: 400px; /* max width on large screens */
-  width: 100%; /* full width of container */
+  max-width: 400px;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -447,16 +457,16 @@ p {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .recovery-image.glow-hq {
-    max-width: 100%; /* allow full width on smaller screens */
-    padding: 0.5rem; /* less padding for smaller screens */
-    font-size: 1.5rem; /* scale down font size */
+    max-width: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .recovery-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* center items horizontally */
-    gap: 1rem; /* space between text and image */
+    align-items: center;
+    gap: 1rem;
   }
 }
 
@@ -495,7 +505,7 @@ p {
 .amenity-image {
   margin-top: 1.5rem;
   width: 100%;
-  height: 200px; /* adjust to your preferred height */
+  height: 200px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -505,11 +515,11 @@ p {
 .amenity-image img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* keeps full image visible without distortion */
+  object-fit: contain;
 }
 
 .location-section {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 2rem 0;
   text-align: center;
 }
@@ -579,7 +589,7 @@ p {
 
 .class-type {
   font-weight: 500;
-  color: #333;
+  color: #222;
 }
 
 .class-instructor {
@@ -588,7 +598,7 @@ p {
 }
 
 .book-btn {
-  background: #333;
+  background: #08541d;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -603,7 +613,7 @@ p {
 }
 
 .booking-info {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -655,7 +665,7 @@ p {
 }
 
 .pricing-card.popular {
-  border: 2px solid #d4b5a0;
+  border: 2px solid #08541d;
 }
 
 .popular-badge {
@@ -663,8 +673,8 @@ p {
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background: #d4b5a0;
-  color: #333;
+  background: #08541d;
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -703,13 +713,13 @@ p {
 
 .features-list li:before {
   content: "✓";
-  color: #d4b5a0;
+  color: #08541d;
   font-weight: bold;
   margin-right: 0.5rem;
 }
 
 .join-btn {
-  background: #333;
+  background: #000000;
   color: #fff;
   border: none;
   padding: 1rem 2rem;
@@ -726,7 +736,7 @@ p {
 }
 
 .membership-benefits {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -846,11 +856,11 @@ p {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #d4b5a0;
+  border-color: #08541d;
 }
 
 .submit-btn {
-  background: #333;
+  background: #000000;
   color: #fff;
   border: none;
   padding: 1rem 2rem;
@@ -867,7 +877,7 @@ p {
 }
 
 .map-section {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -893,7 +903,7 @@ p {
 /* Login Page Styles */
 .login-section {
   padding: 4rem 0;
-  background: #f8f8f8;
+  background: #fcf9ee;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -946,7 +956,7 @@ p {
 }
 
 .forgot-link {
-  color: #d4b5a0;
+  color: #08541d;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -957,7 +967,7 @@ p {
 
 .login-btn {
   width: 100%;
-  background: #333;
+  background: #000000;
   color: #fff;
   border: none;
   padding: 1rem;
@@ -980,7 +990,7 @@ p {
 }
 
 .login-footer a {
-  color: #d4b5a0;
+  color: #08541d;
   text-decoration: none;
 }
 
@@ -1000,7 +1010,7 @@ p {
   letter-spacing: 1px;
 }
 
-.benefits-list {
+.benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
@@ -1062,7 +1072,7 @@ p {
 }
 
 .help-link {
-  color: #d4b5a0;
+  color: #08541d;
   text-decoration: none;
   font-weight: 500;
 }
@@ -1073,7 +1083,7 @@ p {
 
 /* Footer Styles */
 .site-footer {
-  background-color: rgb(95, 81, 78);
+  background-color: #000000;
   color: #fbf3f3;
   padding: 4rem 0 2rem;
 }
@@ -1154,7 +1164,7 @@ p {
 }
 
 .values-section {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -1223,7 +1233,7 @@ p {
 }
 
 .member-title {
-  color: #d4b5a0;
+  color: #08541d;
   font-weight: 500;
   margin-bottom: 1rem;
 }
@@ -1231,7 +1241,7 @@ p {
 /* Club Solace Page Styles */
 .club-intro {
   padding: 4rem 0;
-  background: #f8f8f8;
+  background: #fcf9ee;
 }
 
 .intro-content {
@@ -1272,7 +1282,7 @@ p {
 }
 
 .tier-card.featured {
-  border: 2px solid #d4b5a0;
+  border: 2px solid #08541d;
 }
 
 .featured-badge {
@@ -1280,8 +1290,8 @@ p {
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background: #d4b5a0;
-  color: #333;
+  background: #08541d;
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -1312,13 +1322,13 @@ p {
 
 .tier-benefits li:before {
   content: "✓";
-  color: #d4b5a0;
+  color: #08541d;
   font-weight: bold;
   margin-right: 0.5rem;
 }
 
 .community-events {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -1337,8 +1347,8 @@ p {
 }
 
 .event-date {
-  background: #d4b5a0;
-  color: #333;
+  background: #08541d;
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   display: inline-block;
@@ -1378,8 +1388,8 @@ p {
 }
 
 .avatar-placeholder {
-  background: #d4b5a0;
-  color: #333;
+  background: #08541d;
+  color: #fff;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -1404,7 +1414,7 @@ p {
 }
 
 .join-cta {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
   text-align: center;
 }
@@ -1471,7 +1481,7 @@ p {
 }
 
 .register-btn {
-  background: #333;
+  background: #000000;
   color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -1488,7 +1498,7 @@ p {
 }
 
 .recurring-events {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -1514,7 +1524,7 @@ p {
 }
 
 .schedule {
-  color: #d4b5a0;
+  color: #08541d;
   font-weight: 500;
   margin-bottom: 1rem;
 }
@@ -1562,9 +1572,8 @@ p {
 }
 
 .event-cta {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
-  text-align: center;
 }
 
 .newsletter-signup {
@@ -1583,7 +1592,7 @@ p {
 }
 
 .subscribe-btn {
-  background: #333;
+  background: #000000;
   color: #fff;
   border: none;
   padding: 1rem 2rem;
@@ -1642,13 +1651,13 @@ p {
 
 .standard-card li:before {
   content: "•";
-  color: #d4b5a0;
+  color: #08541d;
   font-weight: bold;
   margin-right: 0.5rem;
 }
 
 .community-guidelines {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -1716,7 +1725,7 @@ p {
 }
 
 .feedback-section {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
   text-align: center;
 }
@@ -1728,7 +1737,7 @@ p {
 .feedback-btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: #333;
+  background: #000000;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
@@ -1745,12 +1754,12 @@ p {
 
 .feedback-btn.secondary {
   background: transparent;
-  color: #333;
-  border: 2px solid #333;
+  color: #000000;
+  border: 2px solid #000000;
 }
 
 .feedback-btn.secondary:hover {
-  background: #333;
+  background: #000000;
   color: #fff;
 }
 
@@ -1802,7 +1811,7 @@ p {
 }
 
 .contact-info {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 2rem;
   border-radius: 8px;
   margin-top: 3rem;
@@ -1826,7 +1835,7 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .header-container {
+  .header-inner {
     flex-direction: column;
     gap: 1rem;
   }
@@ -1846,12 +1855,12 @@ p {
   }
 
   .text-content h2 {
-    font-size: 2.5rem; /* bigger heading */
+    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 
   .text-content p {
-    font-size: 1.125rem; /* slightly bigger paragraph */
+    font-size: 1.125rem;
     line-height: 1.6;
     margin-bottom: 2rem;
   }
@@ -1945,7 +1954,7 @@ p {
 
 /* Recovery Pricing Styles */
 .recovery-pricing {
-  background: #f8f8f8;
+  background: #fcf9ee;
   padding: 4rem 0;
 }
 
@@ -2069,7 +2078,7 @@ p {
 .page-hero {
   text-align: center;
   padding: 3rem 1rem;
-  background: linear-gradient(135deg, #f5f5f5, #e8f0f5);
+  background: linear-gradient(135deg, #fcf9ee, #e8f0f5);
   color: #333;
 }
 
@@ -2087,7 +2096,7 @@ p {
 /* Schedule Section */
 .schedule-section {
   padding: 3rem 1rem;
-  background-color: #fff;
+  background-color: #fcf9ee;
 }
 
 .schedule-grid {
@@ -2097,7 +2106,7 @@ p {
 }
 
 .day-card {
-  background: #fafafa;
+  background: #fff;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -2153,7 +2162,7 @@ p {
 
 /* Book Button */
 .book-btn {
-  background: #2e8b57;
+  background: #08541d;
   color: white;
   border: none;
   padding: 0.4rem 0.8rem;
@@ -2169,7 +2178,7 @@ p {
 
 /* Booking Info */
 .booking-info {
-  background: #f9f9f9;
+  background: #fcf9ee;
   padding: 3rem 1rem;
 }
 
@@ -2206,10 +2215,11 @@ p {
 
 /* ====== HEADER BASE STYLES ====== */
 .site-header {
-  background: #121010;
+  background: #000000;
   padding: 10px 20px;
   color: #fff;
 }
+
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -2217,11 +2227,13 @@ p {
   max-width: 1200px;
   margin: auto;
 }
+
 .brand a {
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
 }
+
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -2230,23 +2242,28 @@ p {
   color: #fff;
   cursor: pointer;
 }
+
 .main-nav {
   display: flex;
 }
+
 .nav-list {
   display: flex;
   list-style: none;
   gap: 20px;
 }
+
 .nav-list a {
   color: #fff;
   text-decoration: none;
 }
+
 .login-btn-container {
   margin-left: 20px;
 }
+
 .login-btn {
-  background: #ff6b6b;
+  background: #08541d;
   color: #fff;
   padding: 8px 16px;
   border-radius: 5px;
