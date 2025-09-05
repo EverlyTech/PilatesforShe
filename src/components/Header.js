@@ -1,24 +1,11 @@
 // src/components/Header.jsx
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// Import your logo image (update the path if your assets folder is located differently)
-import logo5 from "../assets/logo5.PNG";
+// import logo5 from "../assets/logo5.PNG";
+import logo6 from "../assets/IMG_1030.PNG";
 
 const Header = () => {
-  const [showOthers, setShowOthers] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const dropdownRef = useRef(null);
-
-  // Close dropdown if clicked outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setShowOthers(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   // Close mobile menu when window is resized to desktop
   useEffect(() => {
@@ -31,9 +18,8 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Closes both menus
+  // Close menus on click
   const closeMenus = () => {
-    setShowOthers(false);
     setMobileMenuOpen(false);
   };
 
@@ -67,53 +53,15 @@ const Header = () => {
                   PRICING
                 </Link>
               </li>
-              <li className="others-menu" ref={dropdownRef}>
-                <button
-                  type="button"
-                  onClick={() => setShowOthers(!showOthers)}
-                  className="others-toggle"
-                >
-                  OTHERS ▾
-                </button>
-                {showOthers && (
-                  <ul className="others-dropdown">
-                    <li>
-                      <Link to="/pricing" onClick={closeMenus}>
-                        Wellness Events
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/our-story" onClick={closeMenus}>
-                        FAQs
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/club-solace" onClick={closeMenus}>
-                        CLUB SOLACE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/get-in-touch" onClick={closeMenus}>
-                        GET IN TOUCH
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/events" onClick={closeMenus}>
-                        EVENTS
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/standards" onClick={closeMenus}>
-                        STANDARDS
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/purchase-agreement" onClick={closeMenus}>
-                        PURCHASE AGREEMENT
-                      </Link>
-                    </li>
-                  </ul>
-                )}
+              {/* <li>
+                <Link to="/pricing" onClick={closeMenus}>
+                  WELLNESS EVENTS
+                </Link>
+              </li> */}
+              <li>
+                <Link to="/our-story" onClick={closeMenus}>
+                  FAQs
+                </Link>
               </li>
             </ul>
           </nav>
@@ -122,7 +70,7 @@ const Header = () => {
           <div className="brand">
             <Link to="/" onClick={closeMenus}>
               <img
-                src={logo5}
+                src={logo6}
                 alt="Pilates for She Logo"
                 style={{
                   display: "block",
@@ -131,7 +79,6 @@ const Header = () => {
                   margin: "0 auto",
                   padding: "10px",
                   objectFit: "contain",
-                  // backgroundColor: "#fff",
                 }}
               />
             </Link>

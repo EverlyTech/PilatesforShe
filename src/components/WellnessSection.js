@@ -46,24 +46,28 @@ const WellnessSection = () => {
             <div className="text-content">
               <h2>The SheForm™ Method</h2>
               <p>
-                Our signature approach to empowered movement<br></br>
-                SheForm is our proprietary Pilates method – designed
-                specifically for the everyday Indian woman. Blending the science
-                of functional movement with the soul of intentional practice,
-                it’s more than a workout. It’s a journey inward. A path to
-                strength, healing and self-discovery. Each level reflects a
-                stage in her transformation, meeting her exactly where she is:{" "}
+                Our signature approach to empowered movement
+                <span className="highlight"> SheForm</span> is our proprietary
+                Pilates method – designed specifically for the everyday Indian
+                woman. Blending the science of functional movement with the soul
+                of intentional practice, it’s more than a workout. It’s a
+                journey inward. A path to strength, healing and self-discovery .
+                Each level reflects a stage in her transformation, meeting her
+                exactly where she is: <br></br>
+                SheStart 1.0 - <span className="highlight">
+                  Foundation
+                </span>{" "}
                 <br></br>
-                SheStart 1.0 - Foundation <br></br>
-                SheBuild 1.5 - Progression <br></br>
-                SheRise 2.0 - Intermediate <br></br>
-                ShePower 2.5 - Advanced<br></br>
+                SheBuild 1.5 - <span className="highlight">Progression </span>
+                <br></br>
+                SheRise 2.0 - <span className="highlight">
+                  Intermediate
+                </span>{" "}
+                <br></br>
+                ShePower 2.5 - <span className="highlight">Advanced</span>
+                <br></br>
               </p>
-              <a
-                href="/register"
-                className="cta-button"
-                style={{ color: "white", background: "gray" }}
-              >
+              <a href="/register" className="cta-button">
                 Explore Our Offerings
               </a>
             </div>

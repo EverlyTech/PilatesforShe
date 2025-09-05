@@ -21,7 +21,9 @@ const Hero = () => {
 
       {/* Text Content */}
       <div className="hero-content container" style={{ padding: "0 20px" }}>
-        <h1>EMPOWER HER CORE</h1>
+        <h1 style={{ color: "#FCF9EE", fontWeight: "500" }}>
+          EMPOWER HER CORE
+        </h1>
         <p>
           Rooted in the science and soul of intentional movement, Pilates for
           She™ is more than a studio – it’s a sanctuary for the everyday Indian

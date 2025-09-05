@@ -145,8 +145,8 @@ const Services = () => {
             <div className="amenity-item">
               <h3>Pilates Branded Bags</h3>
               <p>
-                Take home our stylish and eco-friendly Pilates tote bags,
-                perfect for everyday use.
+                Take home our eco-friendly Pilates tote bags, perfect for
+                everyday use.
               </p>
               <div className="amenity-image">
                 <img
