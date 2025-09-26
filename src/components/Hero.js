@@ -1,19 +1,20 @@
 // src/components/Hero.js
 import React from "react";
 import { Link } from "react-router-dom";
-import PilatesVideo from "../assets/Pilates.mp4"; // Import your local video
+import BgImage from "../assets/BgImage.PNG"; // Import existing background image
 
 const Hero = () => {
   return (
     <section className="hero-section">
-      {/* Background Video */}
-      <video
-        src={PilatesVideo}
-        autoPlay
-        muted
-        loop
-        playsInline
+      {/* Background Image */}
+      <div 
         className="hero-video"
+        style={{
+          backgroundImage: `url(${BgImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       />
 
       {/* Dark overlay */}
