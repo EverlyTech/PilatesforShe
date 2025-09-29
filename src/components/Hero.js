@@ -1,24 +1,23 @@
 // src/components/Hero.js
 import React from "react";
 import { Link } from "react-router-dom";
-import BgImage from "../assets/BgImage.PNG"; // Import existing background image
+import BgVideo from "../assets/Pilates.mp4";
 
 const Hero = () => {
   return (
     <section className="hero-section">
-      {/* Background Image */}
-      <div 
+      {/* Background video */}
+      <video
         className="hero-video"
-        style={{
-          backgroundImage: `url(${BgImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
+        src={BgVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
       />
 
       {/* Dark overlay */}
-      <div className="hero-overlay"></div>
+      <div className="hero-overlay" />
 
       {/* Text Content */}
       <div className="hero-content container" style={{ padding: "0 20px" }}>
